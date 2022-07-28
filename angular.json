@@ -5,6 +5,7 @@
     "comp-one": "libs/comp-one",
     "comp-two": "libs/comp-two",
     "foo": "apps/foo",
-    "foo-e2e": "apps/foo-e2e"
+    "foo-e2e": "apps/foo-e2e",
+    "root-storybook": "libs/root/storybook"
   }
 }

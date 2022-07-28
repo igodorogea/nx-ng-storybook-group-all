@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@acme/comp-one": ["libs/comp-one/src/index.ts"],
-      "@acme/comp-two": ["libs/comp-two/src/index.ts"]
+      "@acme/comp-two": ["libs/comp-two/src/index.ts"],
+      "@acme/root/storybook": ["libs/root/storybook/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

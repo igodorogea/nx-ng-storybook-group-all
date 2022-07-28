@@ -13,7 +13,18 @@
         "polyfills": "apps/foo/src/polyfills.ts",
         "tsConfig": "apps/foo/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/foo/src/favicon.ico", "apps/foo/src/assets"],
+        "assets": [
+          {
+            "glob": "favicon.ico",
+            "input": "apps/acme/src",
+            "output": "./"
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/acme/src/assets",
+            "output": "assets"
+          }
+        ],
         "styles": ["apps/foo/src/styles.scss"],
         "scripts": []
       },
@@ -80,35 +91,6 @@
       "options": {
         "jestConfig": "apps/foo/jest.config.ts",
         "passWithNoTests": true
-      }
-    },
-    "storybook": {
-      "executor": "@storybook/angular:start-storybook",
-      "options": {
-        "port": 4400,
-        "configDir": "apps/foo/.storybook",
-        "browserTarget": "foo:build",
-        "compodoc": false
-      },
-      "configurations": {
-        "ci": {
-          "quiet": true
-        }
-      }
-    },
-    "build-storybook": {
-      "executor": "@storybook/angular:build-storybook",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputDir": "dist/storybook/foo",
-        "configDir": "apps/foo/.storybook",
-        "browserTarget": "foo:build",
-        "compodoc": false
-      },
-      "configurations": {
-        "ci": {
-          "quiet": true
-        }
       }
     }
   },

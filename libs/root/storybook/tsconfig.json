@@ -1,0 +1,33 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "files": ["../../../apps/foo/src/polyfills.ts"],
+  "exclude": ["../../**/*.spec.ts", "../../../apps/foo/**/*.spec.ts"],
+  "include": [
+    "../../**/*.stories.ts",
+    "../../**/*.stories.js",
+    "../../**/*.stories.jsx",
+    "../../**/*.stories.tsx",
+    "../../**/*.stories.mdx",
+    "../../../apps/foo/src/**/*.stories.ts",
+    "../../../apps/foo/src/**/*.stories.js",
+    "../../../apps/foo/src/**/*.stories.jsx",
+    "../../../apps/foo/src/**/*.stories.tsx",
+    "../../../apps/foo/src/**/*.stories.mdx",
+    "*.js"
+  ],
+  "compilerOptions": {
+    "target": "es2020",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
