@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/comp-one/src",
+  "prefix": "acme",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/comp-one"],
+      "options": {
+        "jestConfig": "libs/comp-one/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/comp-one/**/*.ts", "libs/comp-one/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
