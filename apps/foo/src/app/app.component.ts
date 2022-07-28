@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'acme-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  template: ` <p>AppComponent works!</p> `,
 })
-export class AppComponent {
-  title = 'foo';
-}
+export class AppComponent {}
